@@ -3,55 +3,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-:root{
-    --cor0:#3DDA84;
-    --cor1:#2B995C;
-    --cor2:#195936;
-    --cor3:#40E68B;
-    --cor4:#81DFAC;
+:root {
+    --cor0: #3DDA84;
+    --cor1: #2B995C;
+    --cor2: #195936;
+    --cor3: #40E68B;
+    --cor4: #81DFAC;
 
-    --fonte-padrao:'Roboto', sans-serif;
-    --fonte-destaque:'Staatliches', cursive;
+    --fonte-padrao: 'Roboto', sans-serif;
+    --fonte-destaque: 'Staatliches', cursive;
 
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    background-color:var(--cor3);
-    font-family:var(--fonte-padrao)
+body {
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao)
 }
-header{
+
+header {
     background-color: var(--cor2);
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
-    background-image: linear-gradient( to top, var(--cor2),var(--cor1),var(--cor0) );
+    background-image: linear-gradient(to top, var(--cor2), var(--cor1), var(--cor0));
 }
-header > h1 {
+
+header>h1 {
     color: white;
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 3px 5px 5px #00000071;
-    
+
 }
-header > p {
-   color: white;
-   font-size: 1.1em;
-   margin: auto;
-   padding: 0px 5px 5px 5px;
-   text-shadow: 3px 5px 5px #00000071;
+
+header>p {
+    color: white;
+    font-size: 1.1em;
+    margin: auto;
+    padding: 0px 5px 5px 5px;
+    text-shadow: 3px 5px 5px #00000071;
 }
-nav{
+
+nav {
     background-color: var(--cor2);
     padding: 15px;
-    box-shadow: 0px 5px 10px  #1959368f;
+    box-shadow: 0px 5px 10px #1959368f;
 }
-nav > a{
+
+nav>a {
     color: var(--cor4);
     text-decoration: none;
     padding: 10px;
@@ -59,50 +64,54 @@ nav > a{
     font-weight: bold;
     font-size: 0.9em;
     transition-duration: .5s;
-    
-    
 }
-nav > a:hover{
+
+nav>a:hover {
     text-decoration: underline;
     background-color: var(--cor4);
-    color:var(--cor2);
+    color: var(--cor2);
     border-radius: 5px;
 
 }
-main{
+
+main {
     background-color: white;
     margin: auto;
     padding: 20px;
     margin-bottom: 20px;
     min-width: 300px;
-    max-width: 1000px ;
+    max-width: 1000px;
     box-shadow: 0px 0px 10px #1959368f;
     border-radius: 0px 0px 5px 5px;
 }
 
-main h1{
+main h1 {
     color: var(--cor2);
     font-family: var(--fonte-destaque);
     margin-bottom: 10px;
     font-size: 1.5em;
 }
-main h2{
+
+main h2 {
     color: var(--cor2);
     font-family: var(--fonte-destaque);
     margin-bottom: 10px;
     font-size: 1.3em;
-    
+
 }
-main p{
+
+main p {
     text-align: justify;
     margin: 10px 0px;
     line-height: 1.2em;
     text-indent: 25px;
 }
-main strong{
+
+main strong {
     color: var(--cor2);
 }
-main a{
+
+main a {
     text-decoration: none;
     color: var(--cor2);
     padding: 1px 4px;
@@ -110,32 +119,38 @@ main a{
     border-radius: 2px;
     font-weight: bold;
 }
-a.externo::after{
+
+a.externo::after {
     content: "\00A0\1F517";
-    
+
 }
-main a:hover{
+
+main a:hover {
     text-decoration: underline;
     color: var(--cor4);
     background-color: var(--cor2);
 }
+
 main img {
     width: 100%;
 
 }
-main img .pequena{
+
+main img .pequena {
     max-width: 350px;
     display: block;
     margin: auto;
 }
-div.video{
+
+div.video {
     background-color: var(--cor2);
     margin: 0px -20px 20px -20px;
     padding: 10px;
     padding-bottom: 59%;
     position: relative;
 }
-div.video > iframe{
+
+div.video>iframe {
     border-radius: 5px;
     position: absolute;
     top: 5%;
@@ -143,29 +158,32 @@ div.video > iframe{
     width: 90%;
     height: 90%;
 }
-aside{
+
+aside {
     background-color: var(--cor4);
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0px 0px 10px #1959368f;
     border: 1px solid var(--cor2);
 }
-aside h3{
+
+aside h3 {
     color: white;
     font-family: var(--fonte-padrao);
     background-color: var(--cor2);
     margin: -11px -11px 0px -11px;
     border-radius: 6px 6px 0px 0px;
     padding: 10px;
-   
+
 }
 
 aside ul {
-    list-style-type:"\2714\00A0";
+    list-style-type: "\2714\00A0";
     list-style-position: inside;
     columns: 2;
 }
-footer{
+
+footer {
     background-color: var(--cor2);
     color: white;
     text-align: center;
